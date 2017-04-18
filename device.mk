@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libshim_c \
     libshims_android \
     libshims_binder \
     libwui

@@ -30,9 +30,14 @@ function blob_fixup() {
         |vendor/lib/libmmcamera2_pproc_modules.so \
         |vendor/lib/libmmcamera2_imglib_modules.so \
         |vendor/lib/libmmcamera2_cpp_module.so \
-        |vendor/lib/libmmcamera_pdaf.so \
-        |vendor/bin/mm-qcamera-daemon)
+        |vendor/lib/libmmcamera_pdaf.so)
             sed -i 's|data/misc/camera|data/vendor/qcam|g' "${2}"
+            ;;
+        vendor/bin/mm-qcamera-daemon)
+            sed -i 's|data/misc/camera|data/vendor/qcam|g' "${2}"
+            if ! "${PATCHELF}" --print-needed "${2}" | grep "libshim_pthreadts.so" >/dev/null; then
+                "${PATCHELF}" --add-needed "libshim_pthreadts.so" "${2}"
+            fi
             ;;
         vendor/lib/libmmcamera2_stats_modules.so)
             sed -i 's|data/misc/camera|data/vendor/qcam|g' "${2}"

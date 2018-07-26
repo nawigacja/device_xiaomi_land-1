@@ -1,4 +1,5 @@
 # All unpinned blobs below are extracted from land-user 6.0.1 MMB29M V10.2.2.0.MALMIXM release-keys
+# prada Package version: prada-user 6.0.1 MMB29M V10.2.2.0.MCEMIXM release-keys
 
 # ACDB
 etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
@@ -311,7 +312,6 @@ vendor/lib/libmmcamera_isp_chroma_suppress40.so
 vendor/lib/libmmcamera_isp_clamp_encoder40.so
 vendor/lib/libmmcamera_isp_clamp_video40.so
 vendor/lib/libmmcamera_isp_clamp_viewfinder40.so
-vendor/lib/libmmcamera_isp_color_correct40.so
 vendor/lib/libmmcamera_isp_color_xform_encoder40.so
 vendor/lib/libmmcamera_isp_color_xform_viewfinder40.so
 vendor/lib/libmmcamera_isp_cs_stats44.so
@@ -358,6 +358,9 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libseemore.so
 vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
+
+# Camera stack - color_correct40 - from prada
+vendor/lib/libmmcamera_isp_color_correct40.so
 
 # Display calibration
 etc/qdcm_calib_data_hx8394F_HD720p_video_BOE.xml:vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE.xml|eae73d5892ed83fc832d40eb3c74945e0e63c1a4

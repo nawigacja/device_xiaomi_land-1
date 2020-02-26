@@ -10,6 +10,9 @@ persist.vendor.btstack.enable.splita2dp=false
 ro.charger.disable_init_blank=true
 ro.charger.enable_suspend=true
 
+# fastbootd
+ro.fastbootd.available=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 

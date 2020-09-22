@@ -18,3 +18,8 @@ vendor.mm.enable.qcom_parser=1048575
 
 # Radio
 ril.subscription.types=NV,RUIM
+
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24

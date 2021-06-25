@@ -11,7 +11,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-nad
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
@@ -235,6 +234,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     libshim_imscamera \
     vendor.qti.hardware.camera.device@1.0
+
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlay
 
 # HW crypto
 PRODUCT_PACKAGES += \

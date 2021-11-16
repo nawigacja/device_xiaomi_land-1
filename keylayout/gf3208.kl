@@ -13,4 +13,4 @@ key 96   DPAD_CENTER
 #key 105   DPAD_LEFT
 #key 106   DPAD_RIGHT
 
-key 353 CAMERA
+key  353    WAKEUP

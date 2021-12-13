@@ -345,6 +345,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.goodix.sh \
+    init.class_main.sh \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.usb.rc \

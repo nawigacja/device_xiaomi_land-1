@@ -9,6 +9,7 @@ ctl.vendor.imsrcsd         u:object_r:vendor_ctl_vendor_imsrcsservice_prop:s0
 
 # Baseband
 vendor.gsm.version.baseband	u:object_r:baseband_prop:s0
+gsm.version.baseband            u:object_r:baseband_prop:s0
 
 # Camera
 cameradaemon.SaveMemAtBoot	u:object_r:camera_prop:s0

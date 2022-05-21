@@ -1,0 +1,34 @@
+typeattribute vendor_init data_between_core_and_vendor_violators;
+
+allow vendor_init {
+  bluetooth_data_file
+  camera_data_file
+  media_rw_data_file
+  nfc_data_file
+  system_data_file
+  wifi_data_file
+  wpa_socket
+  tombstone_data_file
+  system_data_root_file
+}:dir { create search getattr open read setattr ioctl write add_name remove_name rmdir relabelfrom };
+
+allow vendor_init {
+  ipa_dev
+}:dir { create search getattr open read setattr ioctl write add_name remove_name rmdir relabelfrom };
+
+allow vendor_init {
+  ipa_dev
+}:file rw_file_perms;
+
+allow vendor_init {
+  proc_dirty
+  proc_dirty_ratio
+  proc_sched
+}:file w_file_perms;
+
+# Prop
+get_prop(vendor_init, vendor_xiaomi_prop)
+set_prop(vendor_init, camera_prop)
+set_prop(vendor_init, vendor_bservice_prop);
+set_prop(vendor_init, vendor_qcom_ims_prop);
+set_prop(vendor_init, vendor_video_prop);

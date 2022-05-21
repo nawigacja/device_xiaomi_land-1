@@ -1,0 +1,16 @@
+# Bluetooth
+bluetooth.hfp.client=1
+persist.vendor.btstack.enable.splita2dp=false
+
+# Charger
+ro.charger.disable_init_blank=true
+ro.charger.enable_suspend=true
+
+# Fwk detect
+ro.vendor.qti.va_aosp.support=1
+
+# Media
+vendor.mm.enable.qcom_parser=1048575
+
+# Radio
+ril.subscription.types=NV,RUIM

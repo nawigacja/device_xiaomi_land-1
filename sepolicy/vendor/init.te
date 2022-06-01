@@ -1,6 +1,10 @@
 allow init proc_boot_reason:file r_file_perms;
 allow init proc_cmdline:file r_file_perms;
 
+# Dolby
+allow init vendor_data_file:file lock;
+allow init hal_audio_default:binder call;
+
 # Firmware
 allow init firmware_file:filesystem getattr;
 

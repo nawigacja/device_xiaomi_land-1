@@ -1,5 +1,8 @@
 # Dirac
 vendor_public_prop(dirac_prop);
 
+# Dolby
+vendor_internal_prop(vendor_dolby_loglevel_prop);
+
 # Xiaomi
 vendor_public_prop(vendor_xiaomi_prop);

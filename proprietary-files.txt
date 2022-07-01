@@ -1103,5 +1103,5 @@ vendor/lib/mediadrm/libwvdrmengine.so|3ae53fc751f1ddfc6b54f235cef364476fe85f7e
 vendor/lib64/mediadrm/libwvdrmengine.so|9606c921acd992c32d9211d0c6ba92850773980e
 vendor/lib64/libwvhidl.so|049d9e9a82f66b6699611035a6f69f9d7af7c62d
 
-# Wi-Fi - from olive
-vendor/bin/wcnss_service|42d6db361ceacb15eb6560cdc91dbda87ab7f7c5
+# Wi-Fi - from LA.UM.9.6.3.r1-04400-89xx.0
+vendor/bin/wcnss_service|48e4a96a9de69bd83791a3b0b2134f5ab1205adc

@@ -2,7 +2,7 @@
 <device name="Android">
     <item name="none">0</item>
     <item name="screen.on">63</item>
-    <item name="screen.full">205</item>
+    <item name="screen.full">261</item>
     <array name="cpu.clusters.cores">
         <value>4</value>
         <value>4</value>
@@ -35,7 +35,9 @@
         <value>108</value>
         <value>111</value>
     </array>
-    <item name="cpu.suspend">0.8</item>
+    <item name="cpu.cluster_power.cluster0">0.1</item>
+    <item name="cpu.cluster_power.cluster1">0.1</item>
+    <item name="cpu.suspend">0.1</item>
     <item name="cpu.idle">1.6</item>
     <item name="bluetooth.active">60</item>
     <item name="bluetooth.at">1</item>
@@ -53,6 +55,40 @@
     <array name="radio.on">
         <value>8</value>
         <value>6</value>
+    </array>
+    <item name="modem.controller.sleep">0</item>
+    <item name="modem.controller.idle">0</item>
+    <item name="modem.controller.rx">0</item>
+    <array name="modem.controller.tx">
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+    </array>
+    <item name="modem.controller.voltage">0</item>
+    <item name="wifi.controller.idle">0</item>
+    <item name="wifi.controller.rx">0</item>
+    <item name="wifi.controller.tx">0</item>
+    <item name="bluetooth.controller.idle">0</item>
+    <item name="bluetooth.controller.rx">0</item>
+    <item name="bluetooth.controller.tx">0</item>
+    <array name="wifi.controller.tx_levels" />
+    <item name="wifi.controller.voltage">0</item>
+    <array name="wifi.batchedscan">
+        <value>.0002</value>
+        <value>.002</value>
+        <value>.02</value>
+        <value>.2</value>
+        <value>2</value>
+    </array>
+    <array name="gps.signalqualitybased">
+        <value>0</value>
+        <value>0</value>
+    </array>
+    <item name="gps.voltage">0</item>
+    <array name="memory.bandwidths">
+        <value>20</value>
     </array>
     <item name="battery.capacity">4100</item>
 </device>
